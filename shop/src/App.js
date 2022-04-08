@@ -18,6 +18,11 @@ function App() {
           <Route path="add" element={<ProductAdd/>}/>
           <Route path="edit/:id" element={<ProductEdit/>}/>
         </Route>
+        <Route path="/cart" element={<Home/>}>
+          <Route path="list" element={<Products/>}/>
+          <Route path="add" element={<ProductAdd/>}/>
+          <Route path="edit/:id" element={<ProductEdit/>}/>
+        </Route>
       </Routes>
       <Footer/>
     </BrowserRouter>

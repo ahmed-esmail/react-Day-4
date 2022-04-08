@@ -11,8 +11,7 @@ function Products() {
     ProductsCRUD.getAll()
       .then((data) => data.json())
       .then((res) => setProdList(res));
-  });
-  console.log(prodList);
+  },[]);
 
   return (
     <>
@@ -22,7 +21,7 @@ function Products() {
             Add Product
           </Link>
         </Button>
-        <Outlet></Outlet>
+        <Outlet/>
         <Table striped bordered hover className="container">
           <thead>
           <tr>
@@ -37,7 +36,7 @@ function Products() {
           </thead>
           <tbody>
           {prodList.map((item) => (
-            <Product prodItem={item}></Product>
+            <Product key={item.id} prodItem={item}/>
           ))}
           </tbody>
         </Table>

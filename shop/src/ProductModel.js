@@ -21,6 +21,12 @@ let ProductsCRUD = {
       body: JSON.stringify(newProduct),
     });
   },
+  deleteById(_id) {
+    return fetch(`${URL}/${_id}`, {
+      method: "delete",
+      headers: {"content-type": "application/json"},
+    });
+  }
 };
 
 export default ProductsCRUD;
