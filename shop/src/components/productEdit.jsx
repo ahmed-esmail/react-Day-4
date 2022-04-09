@@ -1,9 +1,10 @@
-import {Table, Button, Form} from "react-bootstrap";
-import {useState, useEffect} from "react";
+import { Table, Button, Form } from "react-bootstrap";
+import { useState, useEffect } from "react";
 import ProductsCRUD from "../ProductModel";
-import {useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
-function ProductEdit() {
+function ProductEdit({ getAllProduct }) {
   const [values, setValues] = useState({
     id: 0,
     name: "",
@@ -14,9 +15,9 @@ function ProductEdit() {
   });
   const navigate = useNavigate();
 
-  let {id} = useParams();
+  let { id } = useParams();
   const handleChange = (event) => {
-    setValues({...values, [event.target.name]: event.target.value});
+    setValues({ ...values, [event.target.name]: event.target.value });
   };
 
   useEffect(() => {
@@ -25,10 +26,12 @@ function ProductEdit() {
       .then((res) => res.json())
       .then((res) => setValues(res));
   }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(values);
     ProductsCRUD.updateById(id, values).then((res) => console.log(res));
+    toast("edit successfully");
     navigate("/");
   };
 

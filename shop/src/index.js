@@ -5,10 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
