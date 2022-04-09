@@ -124,15 +124,48 @@
   ],
   "cart": [
     {
-      "id": 18,
-      "name": "The Lord of the Rings: One Volume",
-      "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others.",
-      "price": 27.66,
-      "author": "J.R.R. Tolkien",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51d4G0sFMzL.jpg",
+      "id": 11,
+      "name": "The Last Move",
+      "description": "An FBI agent must catch a copycat killer. The only difference this time: she's the final victim.",
+      "price": 7.91,
+      "author": "Mary Burton",
+      "type": "paperback",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/514jRDA21TL._AA300_.jpg",
       "inCart": false,
-      "category": "scifi"
+      "category": "mystery"
+    },
+    {
+      "id": 10,
+      "name": "True Fiction (Ian Ludlow Thrillers)",
+      "description": "A breakneck thriller where truth and fiction collide for the unluckiest writer alive.",
+      "price": 4.99,
+      "author": "Lee Goldberg",
+      "type": "kindle",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51UbplnqSgL._SX331_BO1,204,203,200_.jpg",
+      "inCart": false,
+      "category": "mystery"
+    },
+    {
+      "id": 4,
+      "name": "Principles: Life and Work",
+      "description": "In Principles, Dalio shares what he's learned over the course of his remarkable career. He argues that life, management, economics, and investing can all be systemized into rules and understood like machines.",
+      "price": 18,
+      "author": "Ray Dalio",
+      "type": "hardcover",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51UyMOpP%2BGL._AA300_.jpg",
+      "inCart": false,
+      "category": "business"
+    },
+    {
+      "id": 3,
+      "name": "The 7 Habits of Highly Effective People",
+      "description": "The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change. The 7 Habits of Highly Effective People, the beloved classic that has sold over 20 million copies worldwide, is celebrating its 25th anniversary with this reissue! With a new foreword, the wisdom of the 7 Habits still holds true after all these years. The 7 Habits have become so famous because they work. They have been integrated into everyday thinking by many millions of people. The reason: They work. Habit 1: Be Proactive. Habit 2: Begin with the End in Mind. Habit 3: Put First Things First. Habit 4: Think Win/Win. Habit 5: Seek First to Understand, Then to Be Understood. Habit 6: Synergize. Habit 7: Sharpen the Saw. The book presents a principle-centered approach for solving personal and professional problems.",
+      "price": 11.48,
+      "author": "Stephen R. Covey",
+      "type": "paperback",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Myx6jMujL._AA300_.jpg",
+      "inCart": false,
+      "category": "business"
     }
   ]
 }

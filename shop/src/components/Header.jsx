@@ -21,12 +21,14 @@ function Header() {
         <ul className="navbar-nav">
           <li className="nav-item active">
             <Link className="nav-link" to="/">
-              Products <span className="sr-only">(current)</span>
+              Products <i class="fa-brands fa-product-hunt"></i>{" "}
+              <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/cart">
-              Cart <span className="sr-only">(current)</span>
+              Cart <i class="fa-solid fa-cart-arrow-down"></i>
+              <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item">

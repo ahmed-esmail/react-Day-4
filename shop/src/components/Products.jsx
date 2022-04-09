@@ -9,16 +9,15 @@ import Product from "./product";
 
 function Products() {
   let [prodList, setProdList] = useState([]);
-
   let getAllProduct = () => {
     ProductsCRUD.getAll()
       .then((data) => data.json())
       .then((res) => setProdList(res));
   };
+  useEffect(getAllProduct, []);
 
   let deleteById = (_id) => {
-    ProductsCRUD.deleteById(_id);
-    getAllProduct();
+    ProductsCRUD.deleteById(_id).then(() => getAllProduct());
     toast("Product Delete Successfully 👌", {
       type: toast.TYPE.SUCCESS,
     });
@@ -37,7 +36,6 @@ function Products() {
         toast("Product already At to Cart 👋", { type: toast.TYPE.ERROR })
       );
   };
-  useEffect(getAllProduct, [prodList]);
 
   return (
     <>
