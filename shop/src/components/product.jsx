@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Product({ prodItem, getAllProduct, deleteById, addToCart }) {
+function Product({ prodItem, deleteById, addToCart }) {
   const navigate = useNavigate();
   let navigateToEdit = () => {
     navigate(`product/edit/${prodItem.id}`);
@@ -22,7 +22,6 @@ function Product({ prodItem, getAllProduct, deleteById, addToCart }) {
             className={"fa-solid fa-pencil"}
             style={{ cursor: "pointer" }}
             onClick={navigateToEdit}
-            getAllProduct={getAllProduct}
           />
           <i
             className="fas fa-shopping-cart ms-2"

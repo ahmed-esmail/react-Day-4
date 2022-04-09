@@ -19,16 +19,16 @@ function Products() {
   let deleteById = (_id) => {
     ProductsCRUD.deleteById(_id);
     getAllProduct();
-    toast("double Click to delete Product 👌");
+    toast("delete Product SuccessFully 👌");
   };
 
   let addToCart = (product) => {
+    CartCRUD.addProductToCart(product)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
     toast("Product Added to Cart successfully 👌");
-    CartCRUD.addProductToCart(product).then((res) => {
-      console.log(res);
-    });
   };
-  useEffect(getAllProduct, []);
+  useEffect(getAllProduct, [prodList]);
 
   return (
     <>

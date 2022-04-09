@@ -5,7 +5,7 @@ let CartCRUD = {
     return fetch(URL);
   },
   addProductToCart: (newProduct) => {
-    fetch(URL, {
+    return fetch(URL, {
       method: "post",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(newProduct),
