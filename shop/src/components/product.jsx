@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Product({ prodItem, deleteById, addToCart }) {
+  let [selected, setSelected] = useState(false);
   const navigate = useNavigate();
   let navigateToEdit = () => {
     navigate(`product/edit/${prodItem.id}`);
@@ -25,12 +27,15 @@ function Product({ prodItem, deleteById, addToCart }) {
           />
           <i
             className="fas fa-shopping-cart ms-2"
-            style={{ cursor: "pointer" }}
-            onClick={() => addToCart(prodItem)}
+            style={{ cursor: "pointer", color: "blue" }}
+            onClick={() => {
+              addToCart(prodItem);
+              setSelected(!selected);
+            }}
           />
           <i
             className="fa-solid fa-trash ms-2 "
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", color: "red" }}
             onClick={() => deleteById(prodItem.id)}
           />
         </td>

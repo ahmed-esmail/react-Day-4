@@ -124,15 +124,15 @@
   ],
   "cart": [
     {
-      "id": 12,
-      "name": "Stillhouse Lake (Stillhouse Lake Series)",
-      "description": "Gina Royal is the definition of average—a shy Midwestern housewife with a happy marriage and two adorable children. But when a car accident reveals her husband’s secret life as a serial killer, she must remake herself as Gwen Proctor—the ultimate warrior mom.",
-      "price": 8.96,
-      "author": "Rachel Caine",
-      "type": "paperback",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/41RTt7alEqL._SX332_BO1,204,203,200_.jpg",
+      "id": 18,
+      "name": "The Lord of the Rings: One Volume",
+      "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others.",
+      "price": 27.66,
+      "author": "J.R.R. Tolkien",
+      "type": "hardcover",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51d4G0sFMzL.jpg",
       "inCart": false,
-      "category": "mystery"
+      "category": "scifi"
     }
   ]
 }
