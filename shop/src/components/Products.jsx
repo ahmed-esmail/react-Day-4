@@ -19,11 +19,11 @@ function Products() {
   let deleteById = (_id) => {
     ProductsCRUD.deleteById(_id);
     getAllProduct();
-    toast("double Click to delete Product");
+    toast("double Click to delete Product 👌");
   };
 
   let addToCart = (product) => {
-    toast("Product Added to Cart successfully");
+    toast("Product Added to Cart successfully 👌");
     CartCRUD.addProductToCart(product).then((res) => {
       console.log(res);
     });
