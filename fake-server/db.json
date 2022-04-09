@@ -87,63 +87,19 @@
       "img": "https://images-na.ssl-images-amazon.com/images/I/51qlgJ6ZojL.jpg",
       "inCart": false,
       "category": "scifi"
-    },
-    {
-      "id": 17,
-      "name": "A Game of Thrones: A Song of Ice and Fire, Book 1",
-      "description": "As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced.",
-      "price": 25.16,
-      "author": "George R. R. Martin",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51n5SAiAz7L._AA300_.jpg",
-      "inCart": false,
-      "category": "accessories"
-    },
-    {
-      "id": 18,
-      "name": "The Lord of the Rings: One Volume",
-      "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others.",
-      "price": 27.66,
-      "author": "J.R.R. Tolkien",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51d4G0sFMzL.jpg",
-      "inCart": false,
-      "category": "scifi"
     }
   ],
   "cart": [
     {
-      "id": 17,
-      "name": "A Game of Thrones: A Song of Ice and Fire, Book 1",
-      "description": "As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced.",
-      "price": 25.16,
-      "author": "George R. R. Martin",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51n5SAiAz7L._AA300_.jpg",
+      "id": 12,
+      "name": "Stillhouse Lake (Stillhouse Lake Series)",
+      "description": "Gina Royal is the definition of average—a shy Midwestern housewife with a happy marriage and two adorable children. But when a car accident reveals her husband’s secret life as a serial killer, she must remake herself as Gwen Proctor—the ultimate warrior mom.",
+      "price": 8.96,
+      "author": "Rachel Caine",
+      "type": "paperbackr",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41RTt7alEqL._SX332_BO1,204,203,200_.jpg",
       "inCart": false,
-      "category": "accessories"
-    },
-    {
-      "id": 18,
-      "name": "The Lord of the Rings: One Volume",
-      "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others.",
-      "price": 27.66,
-      "author": "J.R.R. Tolkien",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51d4G0sFMzL.jpg",
-      "inCart": false,
-      "category": "scifi"
-    },
-    {
-      "id": 16,
-      "name": "Harry Potter and the Sorcerer's Stone",
-      "description": "On Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
-      "price": 24.64,
-      "author": "J.K.Rowling",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51qlgJ6ZojL.jpg",
-      "inCart": false,
-      "category": "scifi"
+      "category": "mystery"
     }
   ]
 }

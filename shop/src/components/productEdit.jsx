@@ -1,4 +1,4 @@
-import { Table, Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import ProductsCRUD from "../ProductModel";
 import { useNavigate, useParams } from "react-router-dom";

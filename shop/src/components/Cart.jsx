@@ -1,19 +1,8 @@
 import CartCRUD from "./../CartModel";
 import { useEffect } from "react";
 import { useState } from "react";
-import {
-  CheckIcon,
-  ClockIcon,
-  QuestionMarkCircleIcon,
-  XIcon,
-} from "@heroicons/react/solid";
-
-const Total = ({ products }) => (
-  <h4>
-    Price:$
-    {products.reduce((sum, i) => (sum += i.price), 0).toFixed(2)}
-  </h4>
-);
+import { CheckIcon, ClockIcon, XIcon } from "@heroicons/react/solid";
+import Total from "./TotalPrice";
 
 export default function ShoppingCart() {
   let [products, setProducts] = useState([]);
@@ -23,12 +12,6 @@ export default function ShoppingCart() {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
-  let sum = 0;
-  products.forEach((item) => {
-    console.log(item.price);
-    sum += item.price;
-  });
 
   let handleRemoveItem = (productToRemove) => {
     let newList = products.filter((item) => item.id !== productToRemove.id);
