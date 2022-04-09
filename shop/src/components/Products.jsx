@@ -1,17 +1,18 @@
-import React, {useEffect, useState} from "react";
-import {Table, Button} from "react-bootstrap";
-import {Link, Outlet} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Table, Button } from "react-bootstrap";
+import { Link, Outlet } from "react-router-dom";
 
 import ProductsCRUD from "../ProductModel";
 import Product from "./product";
 
 function Products() {
   let [prodList, setProdList] = useState([]);
-  useEffect(() => {
+  let getAllProduct = () => {
     ProductsCRUD.getAll()
       .then((data) => data.json())
       .then((res) => setProdList(res));
-  },[]);
+  };
+  useEffect(getAllProduct, []);
 
   return (
     <>
@@ -21,23 +22,27 @@ function Products() {
             Add Product
           </Link>
         </Button>
-        <Outlet/>
+        <Outlet />
         <Table striped bordered hover className="container">
           <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Price</th>
-            <th>Category</th>
-            <th>Type</th>
-            <th>Action</th>
-          </tr>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Type</th>
+              <th>Action</th>
+            </tr>
           </thead>
           <tbody>
-          {prodList.map((item) => (
-            <Product key={item.id} prodItem={item}/>
-          ))}
+            {prodList.map((item) => (
+              <Product
+                refGetAllProducts={getAllProduct}
+                key={item.id}
+                prodItem={item}
+              />
+            ))}
           </tbody>
         </Table>
       </div>

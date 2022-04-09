@@ -4,7 +4,7 @@ import ProductsCRUD from "../ProductModel";
 import CartCRUD from "../CartModel";
 import { useState } from "react";
 
-function Product({ prodItem }) {
+function Product({ prodItem, refGetAllProducts }) {
   const navigate = useNavigate();
   let navigateToEdit = () => {
     navigate(`product/edit/${prodItem.id}`);
@@ -12,6 +12,7 @@ function Product({ prodItem }) {
 
   let deleteById = (_id) => {
     ProductsCRUD.deleteById(_id);
+    refGetAllProducts();
   };
 
   let addToCart = (product) => {
