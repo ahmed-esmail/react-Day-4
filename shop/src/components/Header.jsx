@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -25,9 +25,9 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Features
-            </a>
+            <Link className="nav-link" to="/cart">
+              Cart <span className="sr-only">(current)</span>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">

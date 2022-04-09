@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductsCRUD from "../ProductModel";
 import CartCRUD from "../CartModel";
 import { useState } from "react";
+import { ShoppingCartIcon } from "@heroicons/react/solid";
 
 function Product({ prodItem }) {
   let [selected, setSelected] = useState(false);
@@ -35,7 +36,7 @@ function Product({ prodItem }) {
           style={{ cursor: "pointer" }}
           onClick={navigateToEdit}
         />
-
+        <ShoppingCartIcon className="ml-2 flex-shrink-0 text-black-400 hover:text-green-500" />
         <i
           className="fas fa-shopping-cart ms-2"
           color="red"

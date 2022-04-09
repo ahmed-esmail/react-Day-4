@@ -144,6 +144,17 @@
       "img": "https://images-na.ssl-images-amazon.com/images/I/51n5SAiAz7L._AA300_.jpg",
       "inCart": false,
       "category": "accessories"
+    },
+    {
+      "id": 16,
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "description": "On Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+      "price": 24.64,
+      "author": "J.K.Rowling",
+      "type": "hardcover",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51qlgJ6ZojL.jpg",
+      "inCart": false,
+      "category": "scifi"
     }
   ]
 }

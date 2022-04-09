@@ -7,10 +7,16 @@ let CartCRUD = {
   addProductToCart: (newProduct) => {
     fetch(URL, {
       method: "post",
-      headers: {"content-type": "application/json"},
+      headers: { "content-type": "application/json" },
       body: JSON.stringify(newProduct),
     });
-  }
-}
+  },
+  deleteById(_id) {
+    return fetch(`${URL}/${_id}`, {
+      method: "delete",
+      headers: { "content-type": "application/json" },
+    });
+  },
+};
 
-export default CartCRUD
+export default CartCRUD;
