@@ -122,9 +122,7 @@ export default function ShoppingCart() {
                       )}
 
                       <span>
-                        {product.inStock
-                          ? "In stock"
-                          : `Ships in ${product.leadTime}`}
+                        {product.inStock ? "In stock" : `Ships in 3- 5 days`}
                       </span>
                     </p>
                   </div>
