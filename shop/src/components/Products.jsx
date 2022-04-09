@@ -19,14 +19,23 @@ function Products() {
   let deleteById = (_id) => {
     ProductsCRUD.deleteById(_id);
     getAllProduct();
-    toast("delete Product SuccessFully 👌");
+    toast("Product Delete Successfully 👌", {
+      type: toast.TYPE.SUCCESS,
+    });
   };
 
   let addToCart = (product) => {
     CartCRUD.addProductToCart(product)
       .then((res) => res.json())
-      .then((data) => console.log(data));
-    toast("Product Added to Cart successfully 👌");
+      .then((data) => {
+        console.log(data);
+        toast("Product Added to Cart successfully 👌", {
+          type: toast.TYPE.SUCCESS,
+        });
+      })
+      .catch(() =>
+        toast("Product already At to Cart 👋", { type: toast.TYPE.ERROR })
+      );
   };
   useEffect(getAllProduct, [prodList]);
 

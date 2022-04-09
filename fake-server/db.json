@@ -24,7 +24,7 @@
     },
     {
       "id": 6,
-      "name": "The Whole 100",
+      "name": "The Whole 10000",
       "description": "Since 2009, Melissa Hartwig’s critically-acclaimed Whole30 program has quietly led hundreds of thousands of people to effortless weight loss and better health—along with stunning improvements in sleep quality, energy levels, mood, and self-esteem. The program accomplishes all of this by specifically targeting people’s habits and emotional relationships with food. The Whole30 is designed to help break unhealthy patterns of behavior, stop stress-related comfort eating, and reduce cravings, particularly for sugar and carbohydrates. Many Whole30 participants have described achieving 'food freedom'—in just thirty days.",
       "price": 18,
       "author": "Melissa Hartwig",
@@ -50,67 +50,11 @@
       "description": "A breakneck thriller where truth and fiction collide for the unluckiest writer alive.",
       "price": 4.99,
       "author": "Lee Goldberg",
-      "type": "kindle",
+      "type": "kindle paper",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51UbplnqSgL._SX331_BO1,204,203,200_.jpg",
-      "inCart": false,
-      "category": "mystery"
-    },
-    {
-      "id": 11,
-      "name": "The Last Move",
-      "description": "An FBI agent must catch a copycat killer. The only difference this time: she's the final victim.",
-      "price": 7.91,
-      "author": "Mary Burton",
-      "type": "paperback",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/514jRDA21TL._AA300_.jpg",
       "inCart": false,
       "category": "mystery"
     }
   ],
-  "cart": [
-    {
-      "id": 16,
-      "name": "Harry Potter and the Sorcerer's Stone",
-      "description": "On Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
-      "price": 24.64,
-      "author": "J.K.Rowling",
-      "type": "hardcover",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51qlgJ6ZojL.jpg",
-      "inCart": false,
-      "category": "scifi"
-    },
-    {
-      "id": 11,
-      "name": "The Last Move",
-      "description": "An FBI agent must catch a copycat killer. The only difference this time: she's the final victim.",
-      "price": 7.91,
-      "author": "Mary Burton",
-      "type": "paperback",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/514jRDA21TL._AA300_.jpg",
-      "inCart": false,
-      "category": "mystery"
-    },
-    {
-      "id": 3,
-      "name": "The 7 Habits of Highly Effective People",
-      "description": "The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change. The 7 Habits of Highly Effective People, the beloved classic that has sold over 20 million copies worldwide, is celebrating its 25th anniversary with this reissue! With a new foreword, the wisdom of the 7 Habits still holds true after all these years. The 7 Habits have become so famous because they work. They have been integrated into everyday thinking by many millions of people. The reason: They work. Habit 1: Be Proactive. Habit 2: Begin with the End in Mind. Habit 3: Put First Things First. Habit 4: Think Win/Win. Habit 5: Seek First to Understand, Then to Be Understood. Habit 6: Synergize. Habit 7: Sharpen the Saw. The book presents a principle-centered approach for solving personal and professional problems.",
-      "price": 11.48,
-      "author": "Stephen R. Covey",
-      "type": "paperback",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51Myx6jMujL._AA300_.jpg",
-      "inCart": false,
-      "category": "business"
-    },
-    {
-      "id": 12,
-      "name": "Stillhouse Lake (Stillhouse Lake Series)",
-      "description": "Gina Royal is the definition of average—a shy Midwestern housewife with a happy marriage and two adorable children. But when a car accident reveals her husband’s secret life as a serial killer, she must remake herself as Gwen Proctor—the ultimate warrior mom.",
-      "price": 8.96,
-      "author": "Rachel Caine",
-      "type": "paperbackr",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/41RTt7alEqL._SX332_BO1,204,203,200_.jpg",
-      "inCart": false,
-      "category": "mystery"
-    }
-  ]
+  "cart": []
 }

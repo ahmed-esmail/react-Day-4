@@ -4,7 +4,7 @@ import ProductsCRUD from "../ProductModel";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
-function ProductEdit({ getAllProduct }) {
+function ProductEdit() {
   const [values, setValues] = useState({
     id: 0,
     name: "",
@@ -31,7 +31,9 @@ function ProductEdit({ getAllProduct }) {
     event.preventDefault();
     console.log(values);
     ProductsCRUD.updateById(id, values).then((res) => console.log(res));
-    toast("edit successfully");
+    toast("Edit Successfully 👍", {
+      type: toast.TYPE.SUCCESS,
+    });
     navigate("/");
   };
 
