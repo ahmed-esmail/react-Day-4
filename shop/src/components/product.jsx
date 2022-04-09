@@ -3,10 +3,8 @@ import { useNavigate } from "react-router-dom";
 import ProductsCRUD from "../ProductModel";
 import CartCRUD from "../CartModel";
 import { useState } from "react";
-import { ShoppingCartIcon } from "@heroicons/react/solid";
 
 function Product({ prodItem }) {
-  let [selected, setSelected] = useState(false);
   const navigate = useNavigate();
   let navigateToEdit = () => {
     navigate(`product/edit/${prodItem.id}`);
@@ -18,10 +16,13 @@ function Product({ prodItem }) {
 
   let addToCart = (product) => {
     CartCRUD.addProductToCart(product).then((res) => console.log(res));
-    setSelected(true);
   };
   return (
     <tr>
+      <style>{`
+        .red {color: red}
+        .green {color: green}
+      `}</style>
       <td>{prodItem.id}</td>
       <td>{prodItem.name}</td>
       <td>
@@ -36,10 +37,8 @@ function Product({ prodItem }) {
           style={{ cursor: "pointer" }}
           onClick={navigateToEdit}
         />
-        <ShoppingCartIcon className="ml-2 flex-shrink-0 text-black-400 hover:text-green-500" />
         <i
           className="fas fa-shopping-cart ms-2"
-          color="red"
           style={{ cursor: "pointer" }}
           onClick={() => addToCart(prodItem)}
         />
